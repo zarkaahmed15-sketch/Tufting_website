@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNOT &amp; KEY - Fluffy Tufting Deskmats</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/Hoofdpagina.css" />
+</head>
+<body>
+
+<!-- ========================================
+     CUSTOM CURSOR
+========================================= -->
+<div class="cur" id="cur"></div>
+<div class="curring" id="ring"></div>
+
+
+<!-- ========================================
+     NAVIGATION
+========================================= -->
+<nav>
+    <div class="logo">Knot &amp; Key</div>
+    <ul class="navl">
+        <li><a href="#deskmats">Deskmats</a></li>
+        <li><a href="#custom">Custom</a></li>
+        <li><a href="#studio">Studio</a></li>
+        <li><a href="#shop" class="ncta">Shop nu</a></li>
+    </ul>
+</nav>
+
+
+<!-- ========================================
+     HERO
+     Bevat: gradient mesh, 5 drijvende shapes,
+     badge, titel, subtitel en CTA knoppen
+========================================= -->
+<section class="hero">
+
+    <!-- Achtergrond gradiënt mesh -->
+    <div class="hmesh"></div>
+
+    <!-- Geometrische drijvende shapes (CSS animatie) -->
+    <div class="shp s1"></div>
+    <div class="shp s2"></div>
+    <div class="shp s3"></div>
+    <div class="shp s4"></div>
+    <div class="shp s5"></div>
+
+    <!-- Hero tekst content -->
+    <div class="hc">
+        <div class="hbadge">
+            <span class="bdot"></span>
+            Handmade Tufting Studio
+        </div>
+
+        <h1 class="htitle">
+            <span class="t1">Fluffy Deskmats</span>
+            <span class="t2">voor jouw setup</span>
+        </h1>
+
+        <p class="hsub">
+            Zacht, pluizig en volledig handgemaakt. Onze tufting deskmats
+            brengen karakter en textuur naar je bureau.
+        </p>
+
+        <div class="hact">
+            <a href="#shop"   class="bp">Bekijk collectie &#10022;</a>
+            <a href="#custom" class="bs">Custom aanvragen &rarr;</a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     SCROLL CARD
+     Kaart start gekanteld (rotateX) en wordt
+     plat zodra de gebruiker inscrollt (via JS)
+========================================= -->
+<section class="scsec" id="deskmats">
+
+    <div class="schead rev">
+        <h2>Onze <em>nieuwste</em> drops</h2>
+        <p>Elk stuk handgemaakt met tufting gun en premium garen</p>
+    </div>
+
+    <!-- JS voegt class .flat toe bij scrollen -->
+    <div class="cwrap" id="cwrap">
+        <div class="bcard" id="bcard">
+
+            <!-- Spotlight effect: positie via CSS custom properties (--mx, --my) -->
+            <div class="cspot" id="cspot"></div>
+
+            <!-- 2x2 grid met product previews -->
+            <div class="cinner">
+                <div class="pi">
+                    <div class="pibg pa"></div>
+                    <div class="pilbl">
+                        <span class="piname">Terra Bloom</span>
+                        <span class="piprice">&euro;89 &mdash; 900&times;400mm</span>
+                    </div>
+                </div>
+                <div class="pi">
+                    <div class="pibg pb"></div>
+                    <div class="pilbl">
+                        <span class="piname">Sage Checker</span>
+                        <span class="piprice">&euro;79</span>
+                    </div>
+                </div>
+                <div class="pi">
+                    <div class="pibg pc"></div>
+                    <div class="pilbl">
+                        <span class="piname">Deep Blue</span>
+                        <span class="piprice">&euro;85</span>
+                    </div>
+                </div>
+                <div class="pi">
+                    <div class="pibg pd"></div>
+                    <div class="pilbl">
+                        <span class="piname">Violet Dream</span>
+                        <span class="piprice">&euro;95</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     FEATURES
+========================================= -->
+<section class="fsec" id="studio">
+
+    <div class="ebrow rev">Waarom Knot &amp; Key</div>
+
+    <div class="fgrid">
+
+        <div class="fc rev">
+            <div class="ficon">&#129529;</div>
+            <div class="ftitle">100% handgemaakt</div>
+            <div class="fdesc">
+                Elke mat wordt loop voor loop met een tufting gun gemaakt.
+                Geen fabrieken, geen shortcuts. Alleen vakwerk.
+            </div>
+            <div class="fnum">01</div>
+        </div>
+
+        <div class="fc rev d1">
+            <div class="ficon">&#127912;</div>
+            <div class="ftitle">Volledig custom</div>
+            <div class="fdesc">
+                Stuur je ontwerp, character of idee. Wij maken het pluizig
+                werkelijkheid. Elke kleur, elk formaat mogelijk.
+            </div>
+            <div class="fnum">02</div>
+        </div>
+
+        <div class="fc rev d2">
+            <div class="ficon">&#10022;</div>
+            <div class="ftitle">Premium kwaliteit</div>
+            <div class="fdesc">
+                Hoogwaardig garen, stevig backing, antislip onderkant.
+                Zacht voor je polsen en gemaakt om lang mee te gaan.
+            </div>
+            <div class="fnum">03</div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================
+     PRODUCTS GRID
+========================================= -->
+<section class="psec" id="shop">
+
+    <div class="sechdr rev">
+        <h2 class="sectitle">Collectie <em>2025</em></h2>
+        <a href="#" class="seclink">Alles bekijken</a>
+    </div>
+
+    <div class="pgrid">
+
+        <div class="pcard rev">
+            <div class="pvis"><div class="pvbg pv1"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Deskmat</div>
+                <div class="pname">Terra Bloom<br />900&times;400mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;89</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pcard rev d1">
+            <div class="pvis"><div class="pvbg pv2"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Deskmat</div>
+                <div class="pname">Sage Checker<br />800&times;350mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;79</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pcard rev d2">
+            <div class="pvis"><div class="pvbg pv3"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Character Deskmat</div>
+                <div class="pname">Deep Blue Kawaii<br />900&times;400mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;95</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pcard rev">
+            <div class="pvis"><div class="pvbg pv4"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Deskmat</div>
+                <div class="pname">Burnt Grid<br />800&times;350mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;82</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pcard rev d1">
+            <div class="pvis"><div class="pvbg pv5"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Mini Deskmat</div>
+                <div class="pname">Midnight Blue<br />600&times;300mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;65</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pcard rev d2">
+            <div class="pvis"><div class="pvbg pv6"></div></div>
+            <div class="pinfo">
+                <div class="ptag">Character Deskmat</div>
+                <div class="pname">Violet Dream<br />900&times;400mm</div>
+                <div class="pfoot">
+                    <span class="pprice">&euro;95</span>
+                    <div class="pbtn">+</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ========================================
+     SPLIT PANELS
+     Links: over tufting  |  Rechts: custom orders
+========================================= -->
+<section class="splsec" id="custom">
+
+    <div class="sp spa rev">
+        <div class="splbl">01 &mdash; Tufting</div>
+        <h2 class="sptitle">Elke mat <em>uniek,</em><br />met de hand</h2>
+        <p class="spdesc">
+            Met onze tufting gun maken we loop voor loop jouw perfecte deskmat.
+            Premium garen, duurzame backing, antislip onderkant.
+        </p>
+        <a href="#" class="splink">Meer over ons proces</a>
+
+        <!-- Interactieve garen-kleur dots (hover vergroot ze) -->
+        <div class="tdots">
+            <div class="td td1"></div><div class="td td2"></div><div class="td td3"></div>
+            <div class="td td4"></div><div class="td td1"></div><div class="td td5"></div>
+            <div class="td td6"></div><div class="td td2"></div><div class="td td3"></div>
+            <div class="td td4"></div>
+        </div>
+
+        <div class="spstats">
+            <div>
+                <span class="spsn snr">48+</span>
+                <div class="spsl">Kleuren garen</div>
+            </div>
+            <div>
+                <span class="spsn snr">100%</span>
+                <div class="spsl">Handgemaakt</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sp spb spg rev d1">
+        <div class="splbl">02 &mdash; Custom Orders</div>
+        <h2 class="sptitle">Jouw karakter,<br /><em>pluizig</em> gemaakt</h2>
+        <p class="spdesc">
+            Fan art, mascotte, abstract patroon of jouw favoriete kleur &mdash;
+            stuur een referentie en wij maken het voor jou.
+        </p>
+        <a href="#" class="splink">Custom aanvragen</a>
+
+        <div class="spstats">
+            <div>
+                <span class="spsn sni">14 dgn</span>
+                <div class="spsl">Levertijd custom</div>
+            </div>
+            <div>
+                <span class="spsn sni">&infin;</span>
+                <div class="spsl">Mogelijke designs</div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     PROCESS STEPS
+========================================= -->
+<section class="procsec">
+
+    <h2 class="sectitle rev">Zo werkt <em>het proces</em></h2>
+
+    <div class="procgrid">
+        <div class="prc rev">
+            <div class="prci">&#10022;</div>
+            <div class="prcn">01</div>
+            <div class="prct">Ontwerp</div>
+            <div class="prcd">Schets samen het patroon, kleuren en formaat van jouw deskmat.</div>
+        </div>
+        <div class="prc rev d1">
+            <div class="prci">&#10070;</div>
+            <div class="prcn">02</div>
+            <div class="prct">Materiaal</div>
+            <div class="prcd">Keuze uit 48+ kleuren premium garen. Wij selecteren de beste kwaliteit voor jouw design.</div>
+        </div>
+        <div class="prc rev d2">
+            <div class="prci">&#10097;</div>
+            <div class="prcn">03</div>
+            <div class="prct">Productie</div>
+            <div class="prcd">Loop voor loop handgemaakt. Afgewerkt met backing, latex en antislip onderkant.</div>
+        </div>
+        <div class="prc rev d3">
+            <div class="prci">&#9678;</div>
+            <div class="prcn">04</div>
+            <div class="prct">Levering</div>
+            <div class="prcd">Zorgvuldig verpakt. Gratis verzending in NL &amp; BE. Met persoonlijke noot erbij.</div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     NEWSLETTER
+========================================= -->
+<section class="nlsec rev">
+    <h2>Blijf op de <em>hoogte</em></h2>
+    <p>Nieuwe drops, custom slots en studio nieuws. Geen spam, alleen het goede.</p>
+    <div class="nlform">
+        <input type="email" class="nlin" placeholder="jouw@email.nl" />
+        <button class="nlbtn">Inschrijven</button>
+    </div>
+</section>
+
+
+<!-- ========================================
+     FOOTER
+========================================= -->
+<footer>
+    <div class="ftop">
+
+        <div>
+            <div class="flogo">Knot &amp; Key</div>
+            <p class="ftag">
+                Handgemaakte tufting deskmats<br />
+                voor jouw perfecte setup.<br />
+                Zacht. Uniek. Van jou.
+            </p>
+        </div>
+
+        <div>
+            <div class="fh">Shop</div>
+            <ul class="flinks">
+                <li><a href="#">Fluffy Deskmats</a></li>
+                <li><a href="#">Character Mats</a></li>
+                <li><a href="#">Mini Mats</a></li>
+                <li><a href="#">Custom Orders</a></li>
+                <li><a href="#">Cadeaubon</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="fh">Studio</div>
+            <ul class="flinks">
+                <li><a href="#">Ons verhaal</a></li>
+                <li><a href="#">Werkwijze</a></li>
+                <li><a href="#">Workshop</a></li>
+                <li><a href="#">Collab</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="fh">Contact</div>
+            <ul class="flinks">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Email ons</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="fbot">
+        <span>&copy; 2025 Knot &amp; Key Studio</span>
+        <span>Handmade with &hearts; in Belgi&euml;</span>
+    </div>
+</footer>
+
+<!-- JavaScript (altijd onderaan laden) -->
+<script src="./JS/main.js"></script>
+
+</body>
+</html>
