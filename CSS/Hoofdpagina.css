@@ -347,6 +347,34 @@ nav {
 
 .hpcard:hover .hpcard-bg { transform: scale(1.05); }
 
+/* Echte product foto's — vullen de kaart volledig, gefocust op het midden */
+.hpcard-img {
+    position:   absolute;
+    inset:      0;
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+    display:    block;
+}
+
+.hpcard:hover .hpcard-img { transform: scale(1.05); }
+
+/* Product foto in collectie grid */
+.pcard-img {
+    position:   absolute;
+    inset:      0;
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+    display:    block;
+}
+
+.pcard:hover .pcard-img { transform: scale(1.07); }
+
 /* Product achtergrond kleuren */
 .hpbg1 {
     background: radial-gradient(ellipse at 40% 50%, #d4602a, #5a1a00);
